@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+</head>
+
+<style>
+    body {
+        background-image: url(https://vidhyasthalischoolkhoor.com/Uploads/fileupload/172maxresdefault.jpg);
+        background-position: center center;
+        background-repeat: no repeat;
+        background-size: cover;
+        color: #FFFFFF;
+    }
+
+    h1, h3, ol {
+        background-color: #00000080;
+        width: 20%;
+    }
+
+    table, th, td {
+        background-color: #00000080;
+        border: 1px solid #FFFFFF;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    
+    <h1>Student Enrollment Form</h1>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form action="#" method="POST">
+        <fieldset style="
+            background-color: #00000080;">
+            <legend>Student Information</legend>
+
+            <!-- Full Name -->
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            <br><br>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>   
+            <br><br>
+
+            <!-- Sex -->
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <!-- Course Options -->
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSSW">BS Social Work</option>
+                <option value="BSPA">BS Public Administration</option>
+                <option value="BSCS">BS Computer Science</option>
+            </select>
+            <br><br>
+
+            <!-- Interests -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="student-assistant" name="interests" value="Student Assistant">
+            <label for="student-assistant">Student Assistant</label><br>
+            <input type="checkbox" id="classmate" name="interests" value="Classmate">
+            <label for="classmate">Classmate</label><br>
+            <input type="checkbox" id="bsais-3rd-year" name="interests" value="BSAIS 3RD YEAR">
+            <label for="bsais-3rd-year">BSAIS 3RD YEAR</label><br>
+            <input type="checkbox" id="taga-etivac" name="interests" value="Taga ETIVAC">
+            <label for="taga-etivac">Taga ETIVAC</label><br><br>
+            <input type="checkbox" id="motor" name="interests" value="Motor">
+            <label for="motor">Motor</label><br><br>
+
+
+            <!-- Submit Button -->
+            <button type="submit">Enroll Now</button>
+        </fieldset>
+    </form>
+
+    <h3>Student List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Wayne Oira</td>
+                <td>Oirajohnwayne@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Student Assistant</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jhon Paul Cortes</td>
+                <td>Cortesjhonpaul@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Classmate</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kim David Penaredonda</td>
+                <td>Duvidap99@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>BSAIS 3RD YEAR</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jerwin Nico Quijano</td>
+                <td>NicoMapagmaha101@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>BSAIS 3RD YEAR</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lance Eygon</td>
+                <td>Eygon75624@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Taga ETIVAC</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mark Vincent Castillano</td>
+                <td>Vincente214532@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Motor</td>
+            </tr>
+            <tr>
+                <td>7 </td>
+                <td>Lester Genton</td>
+                <td>Gentongenton@example.com</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Classmate</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

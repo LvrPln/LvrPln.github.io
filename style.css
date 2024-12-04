@@ -1,0 +1,536 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    cursor: context-menu;
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+.navbar, #hero, #about, #skills, #contact {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;  /* Ensures padding and borders are included in width */
+}
+
+#hero {
+    position: relative;
+    background-color: #F1E5D1;  
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    padding: 150px 5px; 
+    width: 100%;
+    box-sizing: border-box;
+    color: #333; 
+    text-align: center;
+}
+
+#hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2; 
+    color: #000000;
+    text-align: center;
+}
+
+#hero .hero-content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em; 
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#hero .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+#hero .hero-content .btn {
+    padding: 10px 30px;
+    background-color: #DBB5B5;  
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#hero .hero-content .btn:hover {
+    background-color: #B98D8D;
+}
+
+
+/* START OF THE NAVIGATION */
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.image-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.image-container img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 20%;
+    height: auto;
+    z-index: 2;
+}
+
+.navbar {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 0 !important;
+    background-color: #DBB5B565;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+.navbar .container .navbar-toggler svg {
+    color: #000000;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .container .navbar-collapse {
+    padding: 10px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+/* END OF THE NAVIGATION */
+
+/* HERO SECTION NI PIALANE */
+#hero {
+    background-color: #F1E5D1;
+    margin-top: 30px;
+    padding: 270px 5px;
+    width: 100%;
+}
+
+#hero .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#hero .hero-content h1 {
+    font-family: serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#hero .hero-content p {
+    font-family: serif;
+    font-size: 50px;
+}
+
+#hero .hero-content a {
+    color: #000000;
+    font-family: serif;
+    font-size: 20px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+#hero .hero-content a:hover {
+    background-color: #FFFFFF;    
+}
+/* HERO SECTION NI PIALANE */
+
+/* ABOUT SECTION NI PIALANE */
+#about .col-md-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .text-container {
+    flex-grow: 1; 
+    margin-right: 20px; 
+}
+
+#about .img-container {
+    width: 150px;
+    margin-left: 20px; 
+}
+
+#about .img-container img {
+    width: 100%;
+    height: auto; 
+}
+
+#about {
+    background-color: #F1E5D1;
+    padding: 60px 20px;
+    margin-top: 30px;
+}
+
+#about .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #DBB5B5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#about p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.img-container {
+    justify-content: center;
+}
+
+.img-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#about .text-container {
+    flex: 1;
+}
+
+#about .img-container {
+    margin-left: 20px;
+}
+
+#about .img-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON STYLE NI PIALANEEEEEEEEEEEE */
+#about .btn-primary {
+    padding: 12px 30px;
+    background-color: #DBB5B5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* BUTTON HOVER NI ELVIRA PIALANEEEEEEEEEEEEEEEEEE */
+#about .btn-primary:hover {
+    background-color: #9b6b6b;
+}
+/* ABOUT SECTION NI PIALANE */
+
+/* SKILLS SECTION NI PIALANE */
+#skills {
+    background-color: #F1E5D1;
+    padding: 50px 0;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #DBB5B5;
+}
+
+#skills p {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.skill-circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-circle {
+    text-align: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#DBB5B5 calc(var(--percentage) * 1%), #e0e0e0 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    --percentage: 0;
+}
+
+.inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* SKILLS SECTION NI PIALANE */
+
+/* CONTACT SECTION NI PIALANE */
+#contact {
+    background-color: #F1E5D1;
+    padding: 50px 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#contact h2 {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #DBB5B5;
+}
+
+#contact {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+}
+
+#contact span {
+    font-weight: bold;
+    margin-left: 80px;
+    margin-right: 0;
+    padding: 0;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+#contact .social-links {
+    text-align: center;
+}
+
+#contact .social-links span {
+    margin-left: 0;
+}
+
+#contact .social-links .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#contact .social-links .social-icon a {
+    padding: 18px 22px 16px;
+    margin: 26.56px;
+    background-color: #DBB5B565;
+    border-radius: 100%;
+}
+
+#contact .social-links .social-icon a i {
+    font-size: 30px;
+    color: #000000;
+}
+
+/* HOVER EFFECT NI ELVIRA SA SOCIAL ICON */
+#contact .social-links .social-icon a:hover {
+    background-color: #F1E5D1;
+    transition: 0.5s all ease;
+}
+
+#contact .social-links .social-icon a:hover i {
+    color: #0000EE;
+    transition: 0.5s all ease;
+}
+/* CONTACT SECTION NI PIALANE */
+
+/* FOOTER NI PIALANE */
+footer p {
+    text-align: center;
+    display: block;
+    background-color: #DBB5B565;
+    margin: 0;
+    padding: 18px 0;
+    font-weight: bold;
+}
+/* FOOTER NI PIALANE */
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #DBB5B5;
+        height: 100%;
+    }
+
+    #contact .social-links .social-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #contact .social-links .social-icon a {
+        padding: 12px 18px 12px;
+        margin: 26.56px;
+        background-color: #DBB5B565;
+        border-radius: 100%;
+    }
+    
+    #contact .social-links .social-icon a i {
+        font-size: 22px;
+        color: #000000;
+    }
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #about .row {
+        text-align: center;
+    }
+
+    #about .img-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* RESPONSIVE NI PIALANE SA HERO */
+    #hero .hero-content h1 {
+        font-size: 50px;
+    }
+    
+    #hero .hero-content p {
+        font-size: 30px;
+    }
+    
+    #hero .hero-content a {
+        font-size: 15px;
+    }
+
+    /* RESPONSIVE NI PIALANE SA ABOUT */
+    #about h2 {
+        font-size: 2rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+    }
+
+    #about .col-md-12 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about .img-container {
+        margin-left: 0; 
+        margin-top: 20px;
+    }
+
+    #about .text-container {
+        margin-right: 0;
+    }
+
+    /* RESONSIVE NI PIALANE SA CONTACTS NA AGAD HUWAG NA YUNG SKILLS, FLEX YUN HUWAG NA LIITAN */
+    
+    #contact {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

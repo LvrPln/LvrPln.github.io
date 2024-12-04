@@ -1,182 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Enrollment Form</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Elvira's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS LINKED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-
-<style>
-    body {
-        background-image: url(https://vidhyasthalischoolkhoor.com/Uploads/fileupload/172maxresdefault.jpg);
-        background-position: center center;
-        background-repeat: no repeat;
-        background-size: cover;
-        color: #FFFFFF;
-    }
-
-    h1, h3, ol {
-        background-color: #00000080;
-        width: 20%;
-    }
-
-    table, th, td {
-        background-color: #00000080;
-        border: 1px solid #FFFFFF;
-        border-collapse: collapse;
-        padding: 5px;
-    }
-</style>
-
 <body>
-    
-    <h1>Student Enrollment Form</h1>
+<!-- Navbar Section -->
+    <div class="image-container">
+        <img src="flower-l.png" alt="Flower" class="img-fluid" id="picture"/>
+        <img src="flower-r.png" alt="Flower" class="img-fluid">
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand logo">Vira</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#picture">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h3>Instructions:</h3>
-    <ol>
-        <li>Fill in the form fields.</li>
-        <li>Check your interests.</li>
-        <li>Click "Enroll Now" to submit.</li>
-    </ol>
+<!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome To My Portfolio</h1>
+            <p>Hi! I'm Vira!</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+    </section>
 
-    <form action="#" method="POST">
-        <fieldset style="
-            background-color: #00000080;">
-            <legend>Student Information</legend>
+<!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="fw-bold">About Me</h2>
+                <div class="col-md-12 d-flex align-items-center">
+                    <div class="text-container flex-grow-1">
+                        <p>I am a passionate ESL teacher and IT student, eager to explore the world of technology. I am dedicated to helping students achieve their language learning goals while fostering a love for learning and innovation.</p>
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    </div>
+                    <div class="img-container">
+                        <img src="pialane.png" alt="ELVIRA PIALANE" class="img-fluid rounded-circle shadow-lg mb-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Full Name -->
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full-name" required>
-            <br><br>
+<!-- Skills & Work Experience Section -->
+    <section id="skills">
+        <h2 class="mt-3 fw-bold mb-3">Skills</h2>
+        <div class="skill-circle-container">
+            <div class="skill-circle">
+                <div class="circle" style="--percentage: 30;">
+                    <div class="inner-circle">30%</div>
+                </div>
+                <p>Animation</p>
+            </div>
+            <div class="skill-circle">
+                <div class="circle" style="--percentage: 20;">
+                    <div class="inner-circle">20%</div>
+                </div>
+                <p>Photoshop</p>
+            </div>
+            <div class="skill-circle">
+                <div class="circle" style="--percentage: 50;">
+                    <div class="inner-circle">50%</div>
+                </div>
+                <p>Video Editing</p>
+            </div>
+        </div>
+        <h2 class="mt-5 fw-bold mb-3">Work Experience</h2>
+        <div class="skill-circle-container">
+            <div class="skill-circle">
+                <div class="circle" style="--percentage: 30;">
+                    <div class="inner-circle">30%</div>
+                </div>
+                <p>Encoder</p>
+            </div>
+            <div class="skill-circle">
+                <div class="circle" style="--percentage: 50;">
+                    <div class="inner-circle">70%</div>
+                </div>
+                <p>ESL Teacher</p>
+            </div>
+        </div>
+    </section>
 
-            <!-- Email Address -->
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+<!-- Contact Section -->
+    <section id="contact">
+        <h2 class="mb-3">Contact</h2>
+        <span>Email: <a href="mailto:elvirapialane16@gmail.com">elvirapialane16@gmail.com</a></span>
+        <span>Phone: <a href="tel:09634983705">09634983705</a></span>
+        <span>Instagram: <a href="https://www.instagram.com/elviijp?igsh=MWp3Nml4czlnaHprNg==">elviijp</a></span>
+        <span>Tiktok: <a href="https://www.tiktok.com/@elviijp?_t=8ruhAjLmuOX&_r=1">@Viraaa</a></span>
+        <span>GitHub: <a href="https://github.com/LvrPln">LvrPln</a></span>
 
-            <!-- Age -->
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="18" max="100" required>   
-            <br><br>
+        <ul class="social-links">
+            <span class="mt-5">Follow me on:</span>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/elviijp?igsh=MWp3Nml4czlnaHprNg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/elviiijp?t=9RCilacqOZ88st7wyo8PfA&s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/elvira.pialane13?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </ul>
+    </section>
 
-            <!-- Sex -->
-            <label>Sex:</label>
-            <input type="radio" id="male" name="sex" value="Male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="sex" value="Female">
-            <label for="female">Female</label>
-            <br><br>
+<!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Elvira J. Pialane. All rights reserved.</p>
+    </footer>
 
-            <!-- Course Options -->
-            <label for="course">Course:</label>
-            <select id="course" name="course" required>
-                <option value="BSIT">BS Information Technology</option>
-                <option value="BSSW">BS Social Work</option>
-                <option value="BSPA">BS Public Administration</option>
-                <option value="BSCS">BS Computer Science</option>
-            </select>
-            <br><br>
-
-            <!-- Interests -->
-            <label>Interests:</label><br>
-            <input type="checkbox" id="student-assistant" name="interests" value="Student Assistant">
-            <label for="student-assistant">Student Assistant</label><br>
-            <input type="checkbox" id="classmate" name="interests" value="Classmate">
-            <label for="classmate">Classmate</label><br>
-            <input type="checkbox" id="bsais-3rd-year" name="interests" value="BSAIS 3RD YEAR">
-            <label for="bsais-3rd-year">BSAIS 3RD YEAR</label><br>
-            <input type="checkbox" id="taga-etivac" name="interests" value="Taga ETIVAC">
-            <label for="taga-etivac">Taga ETIVAC</label><br><br>
-            <input type="checkbox" id="motor" name="interests" value="Motor">
-            <label for="motor">Motor</label><br><br>
-
-
-            <!-- Submit Button -->
-            <button type="submit">Enroll Now</button>
-        </fieldset>
-    </form>
-
-    <h3>Student List</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Age</th>
-                <th>Sex</th>
-                <th>Course</th>
-                <th>Interests</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>John Wayne Oira</td>
-                <td>Oirajohnwayne@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>Student Assistant</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Jhon Paul Cortes</td>
-                <td>Cortesjhonpaul@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>Classmate</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Kim David Penaredonda</td>
-                <td>Duvidap99@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>BSAIS 3RD YEAR</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Jerwin Nico Quijano</td>
-                <td>NicoMapagmaha101@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>BSAIS 3RD YEAR</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Lance Eygon</td>
-                <td>Eygon75624@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>Taga ETIVAC</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Mark Vincent Castillano</td>
-                <td>Vincente214532@gmail.com</td>
-                <td>22</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>Motor</td>
-            </tr>
-            <tr>
-                <td>7 </td>
-                <td>Lester Genton</td>
-                <td>Gentongenton@example.com</td>
-                <td>26</td>
-                <td>Male</td>
-                <td>BSIT</td>
-                <td>Classmate</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
